@@ -4,13 +4,27 @@
     box-sizing: border-box;
 }
 
+
+
 body{
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.aside {
+    width: 250px;
+    background-color: black;
+    height: 100vh;
+    /* position: fixed; */
 }
 
 
 
 .flex{
     display: flex;
+    /* flex-direction: flex-start; */
 }
 
 .row{
@@ -32,12 +46,6 @@ header {
     align-items: center;
 }
 
-.aside {
-    width: 200px;
-    background-color: black;
-    height: 100vh;
-    position: fixed;
-}
 
 a{
     color: white;
@@ -49,4 +57,13 @@ main {
     width: 100%;
     background-color: violet;
     height: 750px;
+}
+
+.square {
+    border: solid black;
+    width: calc(100% - 250px);
+    height: 100px;
+    margin: .5rem;
+    background-color: chartreuse;
+
 }
