@@ -50,6 +50,21 @@
 .header_box span {
     margin-top: 1rem;
 }
+.first_list{
+    width: 100%;
+}
+.second_list{
+    width: 100%;
+}
+
+.second_list{
+    overflow-y: auto;
+}
+
+
+
+
+
 
 
 .main_box{
@@ -75,7 +90,7 @@ a{
 
 main {
     width: 100%;
-    background-color: violet;
+    background-color: #141922;
 }
 
 .square {
@@ -88,14 +103,37 @@ main {
 }
 
 
+
+/* FOOTER  */
+
+
 footer{
     width:100%;
-    background-color: crimson;
+    background-color: #282828;
     position: fixed;
     height: 80px;
     bottom: 0;
-    z-index: 5;
-    padding: 2rem;
+    z-index: 2;
     text-align: center;
-    
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.track{
+    width: 100px;
+    background-color: turquoise;
+    height: 80px;
+}
+.control {
+    width: 100px;
+    background-color: turquoise;
+    height: 80px;
+
+}
+
+.volume{
+    width: 100px;
+    background-color: turquoise;
+    height: 80px;
+
 }
