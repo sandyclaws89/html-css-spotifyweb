@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Blinker:wght@100&family=Dongle:wght@300&family=Open+Sans:wght@300&family=Outfit:wght@200&family=Roboto:ital,wght@1,100&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
@@ -17,13 +23,29 @@
 
             <div class="first_list">
                 <ul>
-                    <li>Home</li>
-                    <li>Cerca</li>
-                    <li>La tua libreria</li>
+                    <li>
+                        <div class="row">
+                            <img src="img/home.svg" alt="img home"> <span>Home</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="row">
+                            <img src="img/search.svg" alt="img search"> <span>Home</span>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <img src="img/libreria.svg" alt="img libreria"> <span>Home</span>
+                    </li>
                 </ul>
             </div>
             <h3>PLAYLIST</h3>
-            <span>Crea Playlist</span>
+            <div class="row">
+                <i class="fas fa-plus-square"></i>
+                <span>Crea Playlist</span>
+            </div>
+
+
             <div class="second_list">
                 <ul>
                     <li>Nuova Playlist</li>
@@ -33,33 +55,6 @@
                     <li>Nuova Playlist</li>
                     <li>Nuova Playlist</li>
                     <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    <li>Nuova Playlist</li>
-                    
-                    
-                    
-
                 </ul>
             </div>
 
@@ -68,7 +63,8 @@
 
         <div class="column main_box">
             <div class="row up_box">
-                <a href="#!">EFFETTUA L'UPGRADE</a>
+                <button class="btn">EFFETTUA L'UPGRADE</button>
+
             </div>
 
             <main>
@@ -82,6 +78,7 @@
                         <li>SCOPRI</li>
                     </ul>
                 </nav>
+
                 <!-- CATEGORIA "RECENTLY PLAYED" -->
                 <div class="column category">
                     <h2>Recently played</h2>
@@ -125,12 +122,30 @@
                     <span>Più ascolti più accurati saranno i suggerimenti.</span>
                     <div class="row track_box">
                         <div class="square">
-                            <img src="img/radar.jpeg"alt=" release radar img">
+                            <img src="img/radar.jpeg" alt=" release radar img">
                             <h3>Release Radar</h3>
                             <span>Subtitle</span>
                         </div>
                         <div class="square">
                             <img src="img/mixdaily.jpeg" alt="dailymix img">
+                            <h3>Daily Mix 1</h3>
+                            <span>Subtitle</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATEGORIA "ARTISTI PIU' POPOLARI" -->
+                <div class="column category">
+                    <h2>Artisti più popolari</h2>
+                    <span>Più ascolti più accurati saranno i suggerimenti.</span>
+                    <div class="row track_box">
+                        <div class="circle">
+                            <img src="img/einaudi.jpeg" alt=" release radar img">
+                            <h3>Release Radar</h3>
+                            <span>Subtitle</span>
+                        </div>
+                        <div class="circle">
+                            <img src="img/youg.jpeg" alt="Lana del rey img">
                             <h3>Daily Mix 1</h3>
                             <span>Subtitle</span>
                         </div>
@@ -145,17 +160,35 @@
 
 
     <footer class="row">
-        <div class="track">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla itaque deserunt aliquam
-            distinctio corporis iste, illo sit expedita atque optio voluptates quisquam modi libero maiores voluptatibus
-            dolor hic deleniti eius?</div>
+        <div class="track row">
+            <div class="row">
+                <img src="img/sinister.jpeg" alt="sinister img">
+                <div>
+                    <h5>
+                        Sinister
+                    </h5>
+                    <span>
+                        Brano Nome
+                    </span>
+                </div>
+            </div>
+            <div class="column">
+               
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+            </div>
+        </div>
+
+
         <div class="control">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque hic esse eveniet omnis
-            magni inventore! Corrupti, quia autem! Quia incidunt quis impedit qui soluta illo debitis distinctio vitae
+            magni inventore! Corrupti, quia autem! Quia incidunt quis impedit qui soluta illo debitis distinctio
+            vitae
             placeat quaerat!</div>
         <div class="volume">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi pariatur hic quisquam officia
-            porro vero voluptatum veritatis harum alias. Illo quis non eligendi culpa perspiciatis obcaecati nam nemo
+            porro vero voluptatum veritatis harum alias. Illo quis non eligendi culpa perspiciatis obcaecati nam
+            nemo
             iure mollitia!</div>
     </footer>
 </body>
