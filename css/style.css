@@ -12,8 +12,6 @@
     position: relative;
 }
 
-
-
 .flex{
     display: flex;
 }
@@ -28,22 +26,91 @@
     flex-direction: column;
 }
 
+.wrap{ 
+    flex-wrap: wrap;
+
+}
+
 /* PARTE HEADER (BARRA A SINISTRA) */
 
 .header_box {
     width: 250px;
     background-color: black;
     padding: 1.5rem;
-    position: fixed;
     height: 100vh;
     font-weight: 700;
     color: #7d7f84;
+    justify-content: space-between;
 }
 
 .header_box img {
     object-fit: contain;
     width: 150px;
 }
+
+.img2{
+    width: 50px;
+    height: 50px;
+    display: none;
+
+}
+
+.img_search{
+    background-color: chartreuse;
+}
+.img_home {
+    background-color: tomato;
+}
+
+.img_libreria {
+    background-color: royalblue;
+}
+
+@media screen and (max-width: 600px) {
+    
+
+ .header_box{
+     width: 70px;
+     padding: .5rem;
+     height: 100vh;
+     background-color: black;
+     display: flex;
+     /* flex-direction: column; */
+     flex-wrap: wrap;
+    justify-content: flex-start;
+    }
+
+ .header_box *{
+     display: none;
+ }
+
+ .header_box .img1 {
+     display: none;
+ }
+ .header_box .img2 {
+     display: block;
+     width: 100%;
+ }
+
+ .header_box .img_home{
+     display: block;
+     width: 100%;
+ }
+
+ .header_box .img_search{
+    display: block;
+    width: 100%;
+}
+
+
+    
+}
+
+
+
+
+
+
 
 
 .first_list ul > :last-child{
@@ -66,8 +133,8 @@
 }
 
 .first_list .row {
-align-items: stretch;
-color: #7d7f84; 
+    align-items: stretch;
+    color: #7d7f84; 
 }
 
 .first_list .row span{
@@ -80,20 +147,21 @@ color: #7d7f84;
    height: 40px;
 }
 .second_list{
-    height: 500px;
+    height: 800px;
     color: #7d7f84; 
     justify-content: space-between;
     background-color: blueviolet;
-    flex-shrink: 1;
     overflow-y: auto;
+    margin-bottom: 80px;
 
 
 }
 
 .second_list ul {
-background-color: aqua;
-min-height: 300px;
-
+    /* background-color: aqua; */
+    min-height: 250px;
+    background-color: chartreuse;
+    flex-shrink: 0;
 }
 
 .second_list li{
@@ -119,11 +187,12 @@ min-height: 300px;
 }
 
 .box_install{
-    padding: .5rem 0rem ;
     justify-content: center;  
     background-color: black;
     z-index: 5555555;
-    max-height: 100px;
+    height: 100px;
+    background-color: aqua;
+    /* flex-grow: 1; */
 }
 
 .install{
@@ -131,7 +200,8 @@ min-height: 300px;
     border-bottom: solid #272727;
     height: 50px;
     padding-bottom: .5rem;
-    align-items: center;    
+    align-items: center; 
+    flex-grow: 1;   
 }
 
 .install i {
@@ -200,7 +270,7 @@ main{
 .nav_up{
     justify-content: center;
     text-align: center;
-    margin-left: 250px;
+    /* margin-left: 250px; */
 }
 
 .nav_up li{
@@ -213,7 +283,9 @@ main{
 
 .category{
     margin-top: 1rem;
-    margin-left: 250px;
+  
+    
+    /* margin-left: 250px; */
 }
 
 .category h2 {
@@ -224,6 +296,8 @@ main{
 .track_box{
     flex-wrap: wrap;
     margin-top: 1.0rem;
+    /* flex-grow: 0; */
+    /* min-width: 700px; */
 }
 
 .track_box img {
@@ -234,6 +308,9 @@ main{
     width: calc((100% - 18%)/6);
     margin: 1.5%;
     text-align: center;
+    /* flex-shrink: 1; */
+    /* flex-wrap: wrap; */
+
 }
 
 .circle {
@@ -422,4 +499,3 @@ footer{
     background-color: #797881;
     
 }
-
