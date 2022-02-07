@@ -39,12 +39,15 @@
 
 .header_box img {
     object-fit: contain;
-    width: 170px;
+    width: 150px;
 }
 
-.first_list :last-child{
-    margin-bottom: 1.5rem;
+
+.first_list ul > :last-child{
+    margin-bottom: 1rem;
 }
+
+
 
 .header_box li{
     margin-top: 1.5rem;
@@ -54,9 +57,9 @@
 .header_box span {
     margin-top: 1rem;
 }
+
 .first_list{
-    width: 100%;   
-    
+    width: 100%;      
 }
 
 .first_list .row {
@@ -70,8 +73,8 @@ color: #7d7f84;
 }
 
 .first_list img {
-   width: 50px;
-   height: 50px;
+   width: 40px;
+   height: 40px;
 }
 .second_list{
     height: 500px;
@@ -91,13 +94,55 @@ color: #7d7f84;
 
 .fa-plus-square{
     color: #7d7f84; 
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding-right: 1rem;
 }
 
 .fa-plus-square + span{
-    color:#7d7f84; ;
+    color:#7d7f84;
+    margin-top: .6rem;
+    
 }
+
+.box_install{
+    height: 60px;
+    position: fixed;
+    bottom: 100px;
+    width: 250px;
+    margin: 0;
+    padding: 0 1.5rem ;
+    justify-content: center;  
+    background-color: black;
+}
+
+.install{
+    width: 95%;
+    border-bottom: solid #272727;
+    height: 50px;
+    padding-bottom: .5rem;
+    align-items: center;    
+}
+
+.install i {
+   font-size: 1.2rem;
+   padding-right: .5rem;
+}
+
+.johndoe{
+    width: 95%;
+    height: 50px;
+    align-items: center;
+}
+
+.johndoe img{
+    width: 1.2rem;
+}
+
+.johndoe span{
+    padding-left: .5rem;
+}
+
+
 
 
 
@@ -106,7 +151,9 @@ color: #7d7f84;
 .main_box{
     width: 100%;
     background-color: #141922;
-    margin: 0;
+    overflow-y: auto;
+    height: calc(100vh - 100px);
+    
 }
 
 .up_box {
@@ -115,7 +162,9 @@ color: #7d7f84;
     height: 80px;
     justify-content: end;
     align-items: center;
-    margin: 0;
+    /* padding-left: 250px; */
+    padding: 2rem 0;
+
 }
 
 .btn{
@@ -140,6 +189,7 @@ main{
 .nav_up{
     justify-content: center;
     text-align: center;
+    margin-left: 250px;
 }
 
 .nav_up li{
@@ -220,6 +270,8 @@ footer{
     align-items: flex-start;
 }
 
+/* TRACKBOX  */
+
 .track{
     width: 20%;
     height: 100px;
@@ -266,16 +318,97 @@ footer{
     font-size: 1.5rem;
     color: #818181;
 }
+
+/* CONTROLBOX */
+
 .control {
     width: 50%;
-    background-color: turquoise;
+    /* background-color: turquoise; */
     height: 100px;
-
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0;
 }
 
+
+.control_box{
+    font-size: 2rem;
+    justify-content: center;
+    width: 40%;
+}
+
+.control_box i{
+    padding:0 .5rem;
+    font-size: 1.5rem;
+    
+}
+
+.control_box .fa-play-circle{
+    font-size: 2rem;
+    margin-top: -.2rem;
+}
+
+.minute_box{
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 700;
+    align-items: center;
+}
+
+.minute{
+    height: .25rem;
+    background-color: #797881;
+    width: 85%;
+    border-radius: 40px;
+    margin: 0 1rem;
+}
+
+
+.minute :first-child{
+    background-color: #c0c0c0;
+    height: .25rem;
+    width: 15%;
+}
+
+.minute :last-child{
+    background-color: #797881;
+    /* flex-grow: 1; */
+}
+
+.minute_box > span{
+    width: 30px;
+}
+
+
+/* VOLUME SECTION  */
 .volume{
-    width: 20%;
-    background-color: turquoise;
-    height: 100px;
+        width: 20%;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+}
+.volume i {
+    padding-right: 1rem;
+}
+
+.speaker {
+    height: .25rem;
+    width: 50%;
+    background-color: #797881;
+    border-radius: 40px;
+}
+.speaker :first-child{
+    height: 0.25rem;
+    
+    background-color: #c0c0c0;
+    width: 15%;
+    
+}
+
+.speaker :last-child{
+    height: 0.25rem;
+    background-color: #797881;
+    
 }
 
