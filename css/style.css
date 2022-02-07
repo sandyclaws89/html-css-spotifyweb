@@ -81,8 +81,19 @@ color: #7d7f84;
 }
 .second_list{
     height: 500px;
-    overflow-y: auto;
     color: #7d7f84; 
+    justify-content: space-between;
+    background-color: blueviolet;
+    flex-shrink: 1;
+    overflow-y: auto;
+
+
+}
+
+.second_list ul {
+background-color: aqua;
+min-height: 300px;
+
 }
 
 .second_list li{
@@ -108,15 +119,11 @@ color: #7d7f84;
 }
 
 .box_install{
-    height: 70px;
-    position: fixed;
-    bottom: 100px;
-    left:0;
-    width: 250px;
-    margin: 0;
-    padding: 0 1.5rem ;
+    padding: .5rem 0rem ;
     justify-content: center;  
     background-color: black;
+    z-index: 5555555;
+    max-height: 100px;
 }
 
 .install{
