@@ -6,7 +6,10 @@
     box-sizing: border-box;
     color: white;
     font-family: sans-serif;
+}
 
+.relative{
+    position: relative;
 }
 
 
@@ -105,9 +108,10 @@ color: #7d7f84;
 }
 
 .box_install{
-    height: 60px;
+    height: 70px;
     position: fixed;
     bottom: 100px;
+    left:0;
     width: 250px;
     margin: 0;
     padding: 0 1.5rem ;
