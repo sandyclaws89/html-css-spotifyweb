@@ -631,6 +631,13 @@ transform: scale(1.1);}
         padding-left: .5rem;
     }
 
+    .box_john{
+        width: 90%;
+        background-color: grey;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
     .header_box .img_profile{
         display: block;
         width: 100%;
