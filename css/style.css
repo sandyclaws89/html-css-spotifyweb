@@ -277,11 +277,11 @@ main{
 }
 
 
-.square .overlay :hover{
+.square .overlay:hover{
     opacity: .3;
 }
 
-.circle .overlay :hover{
+.circle .overlay:hover{
     opacity: .3;
 }
 
@@ -293,6 +293,14 @@ main{
     transform: translate(-50%, 50%);
     font-size: 5rem;
 
+}
+
+.circle .fa-play-circle{
+    position: absolute;
+    bottom: 60%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 5rem;
 }
 
 .circle {
@@ -360,6 +368,16 @@ footer{
   color: #818181;
 }
 
+.track span:hover{
+    color:white;
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.track h5{
+    cursor: pointer;
+}
+
 .track > .row{
     align-items: center;
     width: 65%;
@@ -378,6 +396,16 @@ footer{
 .track .column{
     /* width: 25%; */
     align-items: center;
+}
+
+.track .fa-heart:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.track .fa-folder:hover{
+    color: white;
+    cursor: pointer;
 }
 
 .fa-heart {
@@ -418,11 +446,23 @@ footer{
     margin-top: -.2rem;
 }
 
+.control_box i:hover{
+transform: scale(1.1);}
+
 .minute_box{
     width: 100%;
     justify-content: space-between;
     font-weight: 700;
     align-items: center;
+}
+
+.minute:hover .listened{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+.minute:hover .listened div{
+    display: block;
 }
 
 .minute{
@@ -434,13 +474,25 @@ footer{
 }
 
 
-.minute :first-child{
+.listened{
     background-color: #c0c0c0;
     height: .25rem;
     width: 15%;
 }
 
-.minute :last-child{
+ .minute .listened div {
+
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    bottom: 4px;
+    left: 110px;
+    display: none;
+}
+
+.remain{
     background-color: #797881;
     /* flex-grow: 1; */
 }
@@ -468,19 +520,28 @@ footer{
     background-color: #797881;
     border-radius: 40px;
 }
-.speaker :first-child{
-    height: 0.25rem;
-    
-    background-color: #c0c0c0;
-    width: 15%;
-    
+
+.speaker:hover .listened{
+    background-color: greenyellow;
+    cursor: pointer;
 }
 
-.speaker :last-child{
-    height: 0.25rem;
-    background-color: #797881;
-    
+
+.speaker .listened div{
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    bottom: 4px;
+    left: 20px;
+    display: none;
+}   
+
+.speaker:hover .listened div{
+    display: block;
 }
+
 
 
 
